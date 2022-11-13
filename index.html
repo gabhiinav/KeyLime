@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="KEYLIME-2.png">
-    <!--Bulma doesnt have a set of icons, recommends we use FontAwesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Link for Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <!-- Link for CSS file -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Key Lime</title>
     
@@ -30,17 +27,14 @@
         <div id="userInputs">
             <h2> Up for a challange? Try a new recipe.</h2>
 
-            <!-- Keyword search bar -->
             <label for="searchBar">What do you wanna eat? </label>
             <input type="search" autocomplete="off" id="searchBar" name="q"  placeholder="Whatchya' hungry for?">
 
             <br>
 
-            <!-- Number of results desired -->
             <label for="numberResults">How many results?</label>
             <input type="number" id="numberResults" min="1" max="20" placeholder="0">
 
-            <!-- Selectors for health labels (6) -->
             <form class="health-labels">
                 <input type="checkbox" id="vegan" name="vegan">
                 <label for="vegan"> Vegan</label><br>
@@ -64,15 +58,13 @@
                 <button id="recipes-button"> Find Recipes</button>
                 <button id="load-favorite-recipes">Load Favorite Recipes</button>
 
-        
-                <!-- A column for recipes... -->
+       
                 <div class="content three-wide-column">
                     <ol class="list-group" id="recipe-favorites-list"></ol>
                 </div>
                 
                 
                 <div class="row">
-                    <!-- New div for recipe table -->
                     <p id="recipes-table"></p>
                 </div>
 
@@ -93,21 +85,16 @@
         <button id="restaurants-button">Find Restaurants</button>
         <button id="load-favorite-restaurants">Load Favorite Restaurants</button>
 
-            <!-- A column for restaurants... -->
         <div class="content three-wide-column">
             <ol class="list-group" id="restaurant-favorites-list"></ol>
         </div>
                         
         <div class="row" id="results-tables">
-            <!-- Updated id to differentiate w/ other table -->
             <p id="restaurant-table"></p>
-            <!-- New div for recipe table -->
             <p id="recipes-table"></p>
         </div>
         
-        <!-- Link for jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Links for JavaScript files -->
         <script src="./assets/js/edamam.js"></script>
         <script src="./assets/js/zomato.js"></script>
     </div>
